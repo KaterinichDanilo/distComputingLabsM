@@ -5,7 +5,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 public class MultiplicationThread extends Thread {
 
     private static Double sharedVariable = Math.pow(10, 2);
-    private static double a = Math.pow(10, -9), b = Math.pow(10, 9);
+    private static double a = Math.pow(10, -9), b = Math.pow(10, 11);
     private static final ReentrantReadWriteLock readWriteLock = new ReentrantReadWriteLock();
     private static boolean toStop = false;
 
